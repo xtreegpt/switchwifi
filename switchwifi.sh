@@ -25,7 +25,7 @@ printf "\t${NET_ARRAY[24]}\t\t${NET_ARRAY[25]}\t${NET_ARRAY[26]}\t\t${NET_ARRAY[
 printf "\nSelect the network ID number of the WiFi network you want to use "
 printf "\n\n"
 
-printf "enter 0, 1, 2, 3, or 4\n"
+printf "enter 0, 1, 2, 3, 4 or ctrl+c to exit\n"
 
 ############# Read in customer selection ############
 read num
