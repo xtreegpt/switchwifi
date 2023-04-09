@@ -7,6 +7,8 @@ printf "\n%s\t %-s\t\t %-9s %s\n" NETWORK_ID ESSID BSSID FLAGS
 printf "%s\t %-s\t\t %-9s %s\n" ---------- ----- ----- -----
 
 #################### Use sed to skip first line and loop through the rest of $NETS ##########################
+#################### Take note of the ( at while and closed at exit\n. This is to keep the counter ##########
+#################### in the same subshell due to the | sed | while ##########################################
 echo "$NETS" |sed '1d' | (while read i
 do
         echo "$i" | awk '{printf "%5s\t\t %-16s %-6s %-s\n", $1, $2, $3, $4}'
