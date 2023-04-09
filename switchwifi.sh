@@ -2,6 +2,7 @@
 COUNT=0
 NETS=$( wpa_cli -i wlan0 list_networks )
 
+
 printf "\n%s\t %-s\t\t %-9s %s\n" NETWORK_ID ESSID BSSID FLAGS
 printf "%s\t %-s\t\t %-9s %s\n" ---------- ----- ----- -----
 
@@ -26,10 +27,6 @@ read num
 
 ############# Change WiFi network ##############
 printf "switching to network $num\n"
-
-wpa_cli -i wlan0 select_network $num
-
-######### EOF ############
 
 wpa_cli -i wlan0 select_network $num
 
