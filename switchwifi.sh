@@ -20,7 +20,7 @@ done
 
 
 ###################### Ask for ID # ############
-printf "\nSelect the network ID number of the WiFi network you want to use "
+printf "\nSelect the NETWORK_ID number of the WiFi network you want to use "
 printf "\n\n"
 
 printf "enter a number 0 - $COUNT, or ctrl+c to exit\n")
